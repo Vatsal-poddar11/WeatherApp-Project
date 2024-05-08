@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    color: #F9F7F7;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+h1{
+    text-align: center;
+    padding-top: 1%;
+}
+
+.tabs{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+}
+
+.btn{
+    all: unset;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #3f72af;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grant-access-container{
+    display: none;
+}
+
+.grant-access-container.active{
+    display: flex;
+}
+
+.grant-access-container img{
+    margin-bottom: 2rem;
+}
+
+.grant-access-container p:first-of-type{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.grant-access-container p:last-of-type{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.05rem;
+}
+
+.user-weather-container{
+    display: none;
+}
+
+.user-weather-container.active{
+    display: flex;
+}
+
+.place-name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-weather-container p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.user-weather-container img{
+    height: 70px; 
+    width: 70px;
+}
+
+.user-weather-container p[currentTemp]{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.place-name p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.place-name img{
+    width: 30px;
+    height: 30px;
+}
+
+.weather-parameters{
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 5px 0;
+    align-items: center;
+}
+
+.parameter img{
+    width: 50px;
+    height: 50px;
+}
+
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.search-weather-container{
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
+    margin-bottom: 2rem;
+}
+
+.search-weather-container.active{
+    display: flex;
+}
+
+.search-weather-container input{
+    all: unset;
+    width: calc(100% - 100px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+
+.search-weather-container input::placeholder{
+    color:#ffffffb7;
+}
+
+.search-weather-container input:focus{
+    outline: 3px solid #ffffffb7;
+}
+
+.btn-search{
+    all: unset;
+    background-color: #3f72af;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom: 1px;
+}
+
+.search-btn-img{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.error{
+    display: none;
+}
+
+.error.active{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.error p{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/weather-news.png">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <h1>WEATHER APP</h1>
+
+        <div class="tabs">
+            <div class="tab" userWeather>Your Weather</div>
+            <div class="tab" searchWeather>Search Weather</div>
+        </div>
+
+        <div class="container">
+
+            <!-- Grant Access -->
+
+            <div class="sub-container grant-access-container">
+                <img src="./assets/location.png" width="70px" height="70px" loading="lazy">
+                <p>GRANT LOCATION ACCESS</p>
+                <p>Allow Access To Get Weather Information</p>
+                <button class="btn" data-grantAccess>GRANT ACCESS</button>
+            </div>
+
+            <!-- Search Weather Form -->
+
+            <div class="search-weather-container">
+                <form>
+                    <input type="text" placeholder="Search City Name..." data-CityName>
+                    <button class="btn-search" type="submit">
+                        <img class="search-btn-img" src="./assets/search.png" width="20px" height="20px" loading="lazy">
+                    </button>
+                </form>
+            </div>
+
+            <!-- User Weather -->
+
+            <div class="sub-container user-weather-container">
+                
+                <div class="place-name">
+                    <p placeName></p>
+                    <img placeFlag>
+                </div>
+    
+                <p weatherDesc></p>
+                <img weatherImg>
+                <p currentTemp></p>
+    
+                <div class="weather-parameters">
+                    <div class="parameter">
+                        <img src="./assets/wind.png" width="60px" height="60px">
+                        <p>WINDSPEED</p>
+                        <p windSpeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assets/humidity.png" width="60px" height="60px">
+                        <p>HUMIDITY</p>
+                        <p humidityPercent></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assets/cloud.png" width="60px" height="60px">
+                        <p>CLOUDS</p>
+                        <p cloudiness></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error">
+                <img class="error-image" src="./assets/not-found.png" width="320px" height="310px">
+                <p>City Not Found</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
