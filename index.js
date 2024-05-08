@@ -126,6 +126,7 @@ const searchInput = document.querySelector("[data-CityName]");
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    errorImg.classList.remove("active");
 
     let cityName = searchInput.value;
     if(cityName === "") 
